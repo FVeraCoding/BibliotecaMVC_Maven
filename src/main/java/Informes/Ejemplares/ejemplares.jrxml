@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fecd99d7-0d0d-42a8-84bc-9a8ece3d2876">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -17,8 +20,7 @@ FROM Ejemplar E
 INNER JOIN Libro L ON E.id_libro = L.id
 INNER JOIN Sucursal S ON E.id_sucursal = S.id
 LEFT JOIN Reserva R ON E.id = R.id_ejemplar AND R.fecha_fin > NOW()
-GROUP BY E.id, L.titulo, E.estado, S.nombre;
-]]>
+GROUP BY E.id, L.titulo, E.estado, S.nombre;]]>
 	</queryString>
 	<field name="titulo" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -58,36 +60,21 @@ GROUP BY E.id, L.titulo, E.estado, S.nombre;
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="136" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="0" width="164" height="126" uuid="2c92e622-6e67-491e-9de7-3d11c9acac16"/>
-				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
-			</image>
+		<band height="126" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="aa0039ea-94a6-43c2-af09-9258a28e8ae6"/>
+				<reportElement style="Title" x="256" y="0" width="263" height="62" uuid="aa0039ea-94a6-43c2-af09-9258a28e8ae6"/>
 				<textElement verticalAlignment="Middle">
 					<font pdfFontName="Times-Roman"/>
 				</textElement>
-				<text><![CDATA[Coffee Title]]></text>
+				<text><![CDATA[Ejemplares]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="3df8278a-c9a0-42ad-a2c5-76f3140fa644"/>
-				<textElement>
-					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
-				</textElement>
-				<text><![CDATA[Coffee SubTitle]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="172" y="94" width="383" height="42" uuid="5d7ebfdf-4a9a-48d0-879b-a70209185da0"/>
+				<reportElement x="214" y="84" width="305" height="42" uuid="5d7ebfdf-4a9a-48d0-879b-a70209185da0"/>
 				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+				<text><![CDATA[Informe sobre cada uno de los ejemplares de la Biblioteca Oliveria]]></text>
 			</staticText>
-			<image>
-				<reportElement x="633" y="-73" width="219" height="209" uuid="cccf766b-d539-4ab0-85b7-9035e39ef282"/>
-				<imageExpression><![CDATA["coffee_stain.png"]]></imageExpression>
-			</image>
 		</band>
 	</title>
 	<pageHeader>
@@ -103,15 +90,15 @@ GROUP BY E.id, L.titulo, E.estado, S.nombre;
 			</line>
 			<staticText>
 				<reportElement style="Column header" x="0" y="0" width="267" height="15" forecolor="#736343" uuid="f6a63fd7-7a67-4190-ad36-f4cf4b98aca3"/>
-				<text><![CDATA[estado]]></text>
+				<text><![CDATA[Estado]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Column header" x="267" y="0" width="267" height="15" forecolor="#736343" uuid="5ae60e4a-8e6c-4e41-8933-1eb21d2aa417"/>
-				<text><![CDATA[sucursal]]></text>
+				<text><![CDATA[Sucursal]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Column header" x="534" y="0" width="267" height="15" forecolor="#736343" uuid="983945f2-8e9e-4b0a-9747-ce80bbf83e91"/>
-				<text><![CDATA[reservas_activas]]></text>
+				<text><![CDATA[Reservas activas]]></text>
 			</staticText>
 		</band>
 	</columnHeader>

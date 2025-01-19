@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="92d20e31-61b3-4999-a156-faa052779ab7">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="61"/>
 	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
@@ -72,21 +72,14 @@ INNER JOIN Sucursal S ON E.id_sucursal = S.id]]>
 				<textElement verticalAlignment="Middle">
 					<font pdfFontName="Times-Roman"/>
 				</textElement>
-				<text><![CDATA[Coffee Title]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="646879e7-0da0-4e4d-abef-7c420b66044e"/>
-				<textElement>
-					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
-				</textElement>
-				<text><![CDATA[Coffee SubTitle]]></text>
+				<text><![CDATA[Reservas]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="172" y="94" width="383" height="42" uuid="91aa03bc-9b71-4623-a487-1a53978d9131"/>
 				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+				<text><![CDATA[Gracias a este informe usted puede llevar un registro organizado de sus reservas.]]></text>
 			</staticText>
 		</band>
 	</title>

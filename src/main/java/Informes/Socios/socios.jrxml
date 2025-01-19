@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d030f210-de30-4e9d-b89b-932d502bee43">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="61"/>
 	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
@@ -68,21 +68,14 @@ ORDER BY S.fecha_alta DESC;]]>
 				<textElement verticalAlignment="Middle">
 					<font pdfFontName="Times-Roman"/>
 				</textElement>
-				<text><![CDATA[Coffee Title]]></text>
+				<text><![CDATA[Socios]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="c2191c8b-1310-4aa0-9cdb-1181f5cef329"/>
-				<textElement>
-					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
-				</textElement>
-				<text><![CDATA[Coffee SubTitle]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="172" y="94" width="383" height="42" uuid="89291514-16c7-4cbe-878d-8149e133d721"/>
+				<reportElement x="198" y="81" width="254" height="42" uuid="89291514-16c7-4cbe-878d-8149e133d721"/>
 				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+				<text><![CDATA[Información sobre los socios de la Biblioteca Oliveria]]></text>
 			</staticText>
 		</band>
 	</title>
